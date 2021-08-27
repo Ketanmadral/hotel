@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title>Hotel Registration Form</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="index.js"></script>
+  </head>
+  <body class="container-fluid">
+  <header>
+  <div class="p-3 mb-2 bg-dark text-white fs-1 fw-bold">Hotel Registration Form</div>
+  </header>
+  <section>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Customer Info
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+     
+     
+       <dl >
+         <dt>Customer Name</dt>
+         <dd>
+           <input class="form-control" type="text" id="txtName">
+         </dd>
+         <dt>Check in Date</dt>
+         <dd>
+           <input class="form-control" type="date" id="txtDate">
+         </dd>
+         <dt>Total No of Days</dt>
+         <dd>
+           <input class="form-control" type="number" id="txtDay">
+         </dd>
+         <dt> Total No of Persons</dt>
+         <dd>
+           <input class="form-control" type="number" id="txtPerson">
+         </dd>
+         </dl>
+       
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Select Room Type
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+    
+  <div class="row">
+    <div class="col">
+<div class="card ">
+  <div class="card-header bg-warning">
+    Delux Room
+  </div>
+  <div class="card-body">
+    
+<img src="Delux.jpeg" width="100%" height="100">  
+    
+    
+  </div>
+  <div class="card-footer">
+    
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="room"  value="Delux Room"  id="deluxRoom"> &#8377; 2500/-
+  
+</div>
+    
+  </div>
+</div>
+      
+</div>
+    <div class="col">
+<div class="card ">
+  <div class="card-header bg-warning">
+    Suite Room
+  </div>
+  <div class="card-body">
+    
+    
+<img src="Suite.jpeg" width="100%" height="100">  
+
+
+  </div>
+  <div class="card-footer ">
+  
+  
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="room" value="Suite Room"  id="suiteRoom">
+  &#8377; 4000/-
+</div>
+  </div>
+</div>
+      
+   </div>
+ </div>
+
+        
+        
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Select Amenities
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        
+<div class="row">
+    <div class="col">
+<div class="card ">
+  <div class="card-header bg-warning">
+    A/C
+  </div>
+  <div class="card-body">
+    
+  <img src="Ac.jpeg" width="100%" height="100">  
+    
+  </div>
+  <div class="card-footer ">
+    
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox"  value="A/C" id="acAmenities"> &#8377; 1000/-
+ 
+</div>
+    
+  </div>
+</div>
+      
+</div>
+    <div class="col">
+<div class="card ">
+  <div class="card-header bg-warning">
+    Locker
+  </div>
+  <div class="card-body">
+    
+<img src="Locker.jpeg" width="100%" height="100">  
+   
+  </div>
+  <div class="card-footer ">
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox"    value="Locker"   id="lockerAmenities"> &#8377; 300/-
+  
+</div>
+  
+  </div>
+</div>
+      
+   </div>
+ </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+ <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Advance Amount
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <dl>
+          <dt>Advance Amount</dt>
+          <dd>
+            <input class="form-control" type="number" id="advAmt">
+          </dd>
+        </dl>
+        </div>
+    </div>
+  </div>
+  </div>
+  
+<!-- Button trigger modal -->
+<button type="button" onclick="registerClick()" class="btn btn-primary mt-5 d-grid mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Register
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Bill Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover">
+          <tr>
+            <td>Customer Name:</td>
+            <td id="lblName"></td>
+            
+          </tr>
+           <tr>
+            <td>Check in Date:</td>
+            <td id="lblDate"></td>
+          </tr>
+           <tr>
+            <td>Total No of Days: </td>
+            <td id="lblDay"></td>
+          </tr>
+           <tr>
+            <td>Total No of Persons:</td>
+            <td id="lblPerson"></td>
+          </tr>
+           <tr>
+            <td>Room Type:</td>
+            <td id="lblRoom"></td>
+          </tr>
+          <tr>
+            <td>Amenities:</td>
+            <td id="lblAmenities"></td>
+          </tr>
+          <tr>
+            <td>Advance Amount:</td>
+            <td id="lblAdvance"></td>
+          </tr>
+           <tr>
+            <td>Balance Amount:</td>
+            <td id="lblBalance"></td>
+          </tr>
+        </table>
+        
+        
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+  
+  </section>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>
